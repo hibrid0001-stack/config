@@ -1,0 +1,327 @@
+
+config settings 'settings'
+	option dns_type 'doh'
+	option dns_server '1.1.1.1'
+	option bootstrap_dns_server '77.88.8.1'
+	option dns_rewrite_ttl '60'
+	option enable_output_network_interface '0'
+	option enable_badwan_interface_monitoring '0'
+	option enable_yacd '0'
+	option disable_quic '1'
+	option update_interval '3h'
+	option download_lists_via_proxy '0'
+	option dont_touch_dhcp '0'
+	option config_path '/etc/sing-box/config.json'
+	option cache_path '/usr/share/sing-box/cache.db'
+	option log_level 'debug'
+	option exclude_ntp '1'
+	option shutdown_correctly '0'
+	list source_network_interfaces 'br-lan'
+
+config section 'RU'
+	option connection_type 'proxy'
+	option proxy_config_type 'urltest'
+	option enable_udp_over_tcp '0'
+	option user_domain_list_type 'text'
+	option user_subnet_list_type 'text'
+	option mixed_proxy_enabled '0'
+	option user_domains_text 'api.github.com
+copilot-proxy.githubusercontent.com
+api.business.githubcopilot.com
+api.githubcopilot.com
+origin-tracker.githubusercontent.com
+github.com
+copilot-telemetry.githubusercontent.com
+collector.github.com
+default.exp-tas.com
+githubcopilot.com
+individual.githubcopilot.com
+business.githubcopilot.com
+enterprise.githubcopilot.com
+t.me
+tg.dev
+tg.org
+tx.me
+teleg.xyz
+telegram.ai
+telegram.asia
+telegram.biz
+telegram.cloud
+telegram.cn
+telegram.co
+telegram.com
+telegram.de
+telegram.dev
+telegram.dog
+telegram.eu
+telegram.fr
+telegram.host
+telegram.in
+telegram.info
+telegram.io
+telegram.jp
+telegram.me
+telegram.net
+telegram.org
+telegram.qa
+telegram.ru
+telegram.services
+telegram.solutions
+telegram.space
+telegram.team
+telegram.tech
+telegram.uk
+telegram.us
+telegram.website
+telegram.xyz
+telegramapp.org
+telegra.ph
+telesco.pe
+nicegram.app
+telegramdownload.com
+cdn-telegram.org
+comments.app
+contest.com
+fragment.com
+graph.org
+quiz.directory
+tdesktop.com
+telega.one
+telegram-cdn.org
+usercontent.dev
+tgram.org
+torg.org
+2fa.telegram.org
+abuse.telegram.org
+account.telegram.org
+admin.telegram.org
+alpha.telegram.org
+analytics.telegram.org
+android.telegram.org
+api.t.me
+api.telegram.org
+api1.telegram.org
+api2.telegram.org
+api3.telegram.org
+api-docs.telegram.org
+apollo.telegram.org
+ares.telegram.org
+assets.telegram.org
+athena.telegram.org
+aurora.telegram.org
+auth.telegram.org
+beta.telegram.org
+blog.telegram.org
+bot.t.me
+bot.telegram.org
+bots.telegram.org
+business.telegram.org
+careers.telegram.org
+cdn.telegram.org
+cdn1.telegram.org
+cdn2.telegram.org
+cdn3.telegram.org
+cdn4.telegram.org
+cdn5.telegram.org
+cdn6.telegram.org
+cdn7.telegram.org
+cdn8.telegram.org
+cdn9.telegram.org
+changelog.telegram.org
+channels.telegram.org
+community.telegram.org
+contact.telegram.org
+contest.telegram.org
+control.telegram.org
+core.telegram.org
+corp.telegram.org
+dashboard.telegram.org
+dc1.telegram.org
+dc2.telegram.org
+dc3.telegram.org
+dc4.telegram.org
+dc5.telegram.org
+de.telegram.org
+demo.telegram.org
+desktop.telegram.org
+dev.t.me
+dev.telegram.org
+developers.telegram.org
+devtest.telegram.org
+docs.telegram.org
+donate.telegram.org
+email.telegram.org
+enterprise.telegram.org
+faq.telegram.org
+feedback.telegram.org
+files.telegram.org
+flora.telegram.org
+forum.telegram.org
+fr.telegram.org
+ftp.telegram.org
+groups.telegram.org
+hades.telegram.org
+health.telegram.org
+help.telegram.org
+hermes.telegram.org
+hire.telegram.org
+i18n.telegram.org
+image.telegram.org
+imap.telegram.org
+img.telegram.org
+internal.telegram.org
+ios.telegram.org
+jobs.telegram.org
+l10n.telegram.org
+lang.telegram.org
+linux.telegram.org
+local.telegram.org
+login.telegram.org
+macos.telegram.org
+mail.telegram.org
+manager.telegram.org
+media.telegram.org
+merch.telegram.org
+metrics.telegram.org
+mobile.telegram.org
+monitor.telegram.org
+mtproto.telegram.org
+my.telegram.org
+news.telegram.org
+panel.telegram.org
+passport.telegram.org
+ping.telegram.org
+pluto.telegram.org
+pop.telegram.org
+poseidon.telegram.org
+premium.telegram.org
+private.telegram.org
+protocol.telegram.org
+report.telegram.org
+ru.telegram.org
+sandbox.telegram.org
+schema.telegram.org
+security.telegram.org
+shop.telegram.org
+smtp.telegram.org
+ssh.telegram.org
+staging.telegram.org
+static.telegram.org
+stats.telegram.org
+status.telegram.org
+store.telegram.org
+support.telegram.org
+system.telegram.org
+t.me
+tdesktop.telegram.org
+tdlib.telegram.org
+teleg.xyz
+telegram.ai
+telegram.asia
+telegram.biz
+telegram.cloud
+telegram.cn
+telegram.co
+telegram.com
+telegram.de
+telegram.dev
+telegram.dog
+telegram.eu
+telegram.fr
+telegram.host
+telegram.in
+telegram.info
+telegram.io
+telegram.jp
+telegram.me
+telegram.net
+telegram.org
+telegram.qa
+telegram.ru
+telegram.services
+telegram.solutions
+telegram.space
+telegram.team
+telegram.tech
+telegram.uk
+telegram.us
+telegram.website
+telegram.xyz
+telegramapp.org
+telesco.pe
+test.telegram.org
+testing.telegram.org
+tg.dev
+tg.org
+tgandroid.telegram.org
+tgios.telegram.org
+tgram.org
+tgraph.telegram.org
+torg.org
+translate.telegram.org
+translations.telegram.org
+updates.telegram.org
+uptime.telegram.org
+venus.telegram.org
+verify.telegram.org
+vesta.telegram.org
+web.t.me
+web.telegram.org
+webk.telegram.org
+windows.telegram.org
+zeus.telegram.org
+nuvid.com
+instantmessaging-pa.googleapis.com
+remotedesktop.google.com
+remotedesktop-pa.googleapis.com
+instantntc.partymessaging-pa.clients6.google.com
+ntc.party'
+	option user_subnets_text '140.82.121.6
+140.82.121.5  
+140.82.114.22  
+140.82.114.21  
+140.82.113.22  
+140.82.113.21  
+140.82.112.22  
+140.82.112.21
+20.250.119.64
+20.199.39.224
+4.225.11.192
+91.108.56.0/22
+91.108.4.0/22
+91.108.8.0/22
+91.108.16.0/22
+91.108.12.0/22
+149.154.160.0/20
+91.105.192.0/23
+91.108.20.0/22
+185.76.151.0/24'
+	list fully_routed_ips '192.168.1.0/24'
+	list community_lists 'russia_inside'
+	list community_lists 'telegram'
+	option urltest_check_interval '3m'
+	option urltest_tolerance '50'
+	option urltest_testing_url 'https://www.gstatic.com/generate_204'
+	list urltest_proxy_links 'trojan://humanity@188.114.98.0:443?security=tls&sni=www.creationlong.org&insecure=0&allowInsecure=0&type=ws&host=www.creationlong.org&path=%2Fassignment#%F0%9F%8F%B4%E2%80%8D%E2%98%A0%EF%B8%8F%40FreakConfig'
+	list urltest_proxy_links 'hysteria2://89b0ea8c-806b-11ed-94ba-f23c913c8d2b@a72b4e9b-t6t0g0-t7c05o-n09f.hk2.hyhuawei.com:443?sni=a72b4e9b-t6t0g0-t7c05o-n09f.hk2.hyhuawei.com&mport=30000-60000#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BBL%5D'
+	list urltest_proxy_links 'vless://6b922349-fef3-4072-8c64-2f7e1d54046a@84.201.170.180:443?encryption=none&type=tcp&security=reality&fp=random&sni=disk.yandex.ru&pbk=v2hTTCCanUOMtMvI03T5NDs5JrboyECGs6IkMJhhtCw&sid=4d713e24&spx=%2F#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%7C%20%F0%9F%8C%90%20%7C%20%5BIPv6%5D%20%5B%2ACIDR%5D%20YA'
+	list urltest_proxy_links 'vless://df9c5a1d-9dd5-4277-a31a-1ceef16a7d5b@84.201.170.180:8443?encryption=none&type=tcp&security=reality&fp=random&sni=disk.yandex.ru&pbk=MwJrPwi5YU0LLU_XWdKozE_DkWBCeC19AAkPSJNQXlo&sid=83&spx=%2F#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%5B%2ACIDR%5D%20YA'
+	list urltest_proxy_links 'vless://f8c5b018-f51a-4137-be8a-50a451630589@89.208.85.78:7443?encryption=none&type=grpc&security=reality&mode=gun&serviceName=grpc&fp=firefox&sni=www.vk.com&pbk=-aYYOZ3t8L1J5B7qSR45-IjwNTQq6RuE5yzv-rQbOhM&sid=7c59eb19#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%5B%2ACIDR%5D%20VK'
+	list urltest_proxy_links 'vless://f8c5b018-f51a-4137-be8a-50a451630589@lt08.tcpdoor.net:7443?security=reality&type=grpc&fp=firefox&sni=www.vk.com&pbk=-aYYOZ3t8L1J5B7qSR45-IjwNTQq6RuE5yzv-rQbOhM&serviceName=grpc&sid=7c59eb19#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%5B%2ACIDR%5D%20VK'
+	list urltest_proxy_links 'vless://a487adab-0644-4f80-9643-d3036b9f17c6@51.250.86.16:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=eh.vk.com&fp=random&pbk=O25N5CDnfSF5bDG1UAfNZDrfc13j-SbKtNN9DGn0sxQ&sid=d6bdbca5bd55f7b6&spx=%2F054aea7b7cb531ef&type=tcp&headerType=none#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%5B%2ACIDR%5D%20YA'
+	list urltest_proxy_links 'vless://6f6445da-a752-03e8-8ae1-1eb1110ddcf4@5.188.141.186:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=ads.x5.ru&fp=qq&pbk=4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik&sid=d8c6b58bcbb0c323&type=tcp&headerType=none#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%5B%2ACIDR%5D%20VK'
+	list urltest_proxy_links 'vless://d8e5386f-5b56-4a5a-87e2-26fecd735356@node-ru-new.amnesia.pw:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=ekmp-a-51.rzd.ru&fp=chrome&pbk=ii8vkgTdrQCXZocDdyiZzQc5mIwBoYnVhcuAKb9wcRI&type=tcp&headerType=none#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%5B%2ACIDR%5D%20VK'
+	list urltest_proxy_links 'vless://b53877d7-5202-07d0-9ab5-addafffa2add@109.120.189.174:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=ads.x5.ru&fp=qq&pbk=4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik&sid=d8c6b58bcbb0c323&type=tcp&headerType=none#%F0%9F%8C%90%20Anycast-IP%20%5B%2ACIDR%5D%20VK'
+	list urltest_proxy_links 'vless://6b764f25-d6cb-0bb8-bd61-3359187fd478@109.120.189.154:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=anti-vpn.ru&fp=qq&alpn=h2%2Chttp%2F1.1&insecure=1&allowInsecure=1&type=tcp&headerType=none#%F0%9F%87%AB%F0%9F%87%AE%20Finland%20%7C%20%F0%9F%8C%90%20%7C%20%5BIPv6%5D%20%5B%2ACIDR%5D%20VK'
+
+config section 'no_proxy'
+	option connection_type 'exclusion'
+	option user_domain_list_type 'dynamic'
+	option user_subnet_list_type 'disabled'
+	list user_domains 'unecon.ru'
+	list user_domains 'avito.ru'
+	list user_domains 'gosuslugi.ru'
+	list user_domains 'cloud-api.yandex.net'
+	list user_domains 'push.yandex.ru'
+	list user_domains 'xn--80aebkobnwfcnsfk1e0h.xn--p1ai'
+
