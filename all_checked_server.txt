@@ -1,3 +1,3 @@
 trojan://humanity@188.114.98.0:443?security=tls&sni=www.creationlong.org&insecure=0&allowInsecure=0&type=ws&host=www.creationlong.org&path=%2Fassignment#%F0%9F%8F%B4%E2%80%8D%E2%98%A0%EF%B8%8FFreak
-hysteria2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@181.214.99.162:35000?sni=api.kermanshahi.org&insecure=0&allowInsecure=0&obfs=salamander&obfs-password=%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi#Germany
-
+vless://ade0c6cc-1946-498d-9495-f8a1ee1cb109@eu001.ftp.sh:443?type=tcp&encryption=none&security=reality&pbk=uox6bktlZyQF0athOwEHQn13Pg63BMMzOHYEmVQ5CBA&fp=chrome&sni=github.com&sid=7a46&spx=%2F&flow=xtls-rprx-vision#%F0%9F%8F%B4%E2%80%8D%E2%98%A0%EF%B8%8F%20eu001%20%F0%9F%8F%B4%E2%80%8D%E2%98%A0%EF%B8%8F-Mine
+vless://9b0201c7-d0af-4863-81ca-afb8acef7169@eu002.ftp.sh:443?type=tcp&encryption=none&security=reality&pbk=pWxVoGrAX80O-wTOpHVh6jf5qIasJdM3zGIFhOxehkc&fp=chrome&sni=github.com&sid=61beb1d5f076a864&spx=%2Fhub&flow=xtls-rprx-vision#%F0%9F%8F%B4%E2%80%8D%E2%98%A0%EF%B8%8F%20eu002%20%F0%9F%8F%B4%E2%80%8D%E2%98%A0%EF%B8%8F-Mine%202
